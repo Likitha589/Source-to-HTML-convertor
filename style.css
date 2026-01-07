@@ -1,0 +1,59 @@
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 16px;
+}
+
+.code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 0.8;
+}
+
+br {
+    line-height: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.inactive {
+    color: #808080;
+}
+
+.keyword {
+    color: #569CD6;
+    font-weight: bold;
+}
+
+.comment {
+    color: #6A9955;
+    font-style: italic;
+}
+
+.string {
+    color: #CE9178;
+}
+
+.number {
+    color: #B5CEA8;
+}
+
+.preproc {
+    color: #C586C0;
+}
+
+.function {
+    color: #DCDCAA;
+}
+
+.identifier {
+    color: #9CDCFE;
+}
+
+.operator {
+    color: #D4D4D4;
+}

@@ -1,0 +1,37 @@
+START
+  │
+  ▼
+Open Source File (source.c) ──┐
+                               │
+Open HTML File (source.html)   │
+                               ▼
+Read Source File Line by Line
+  │
+  ▼
+Parse Each Character in Line
+  │
+  ├─ Is it a Comment? (// or /* */)
+  │      └─ Yes → Wrap in <span class='comment'>...</span>
+  │
+  ├─ Is it a String? (" ... ")
+  │      └─ Yes → Wrap in <span class='string'>...</span>
+  │
+  ├─ Is it a Keyword? (compare with keywords list)
+  │      └─ Yes → Wrap in <span class='keyword'>...</span>
+  │
+  └─ Else → Print as normal character
+  │
+  ▼
+Write Parsed Content to HTML File
+  │
+  ▼
+Repeat for All Lines
+  │
+  ▼
+Close HTML Tags (</pre>, </body>, </html>)
+  │
+  ▼
+Close Files
+  │
+  ▼
+END
